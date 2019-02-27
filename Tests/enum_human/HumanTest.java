@@ -11,19 +11,21 @@ class HumanTest {
 
     @Test
     void getName() {
-        Assertions.assertEquals("Pola", pola.getName());
+        assertEquals("Pola", pola.getName());
     }
 
     @Test
     void getOld() {
-        assertNotEquals(10, 21);
+        assertNotEquals(10, pola.getOld());
     }
 
     @Test
     void getColorOfEye() {
+        assertEquals(ColorOfEye.DARK, pola.getColorOfEye());
     }
 
     @Test
     void getColorOfHair() {
+        assertEquals(ColorOfHair.BROWN, pola.getColorOfHair());
     }
 }
